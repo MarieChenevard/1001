@@ -90,6 +90,7 @@ a{
 }
 
 #name{
+  color: #D30030;
   font-family: 'Marcellus', serif;
   font-weight: bold;
   align-self: center;
@@ -230,10 +231,12 @@ figcaption{
   display: flex;
   padding-left:10%;
   padding-bottom: 50px;
+  padding-top: 40px;
 }
 
 #universeText img{
-  width: 39%;
+  width:33%;
+  height: 616px;
 }
 
 #universe p{
@@ -242,14 +245,18 @@ figcaption{
   font-size: 19px;
   padding-left:5%;
   padding-right:5%;
-  text-align: center;
-  align-self: center;
+  text-align: start;
+  line-height: 160%;
 }
 
 #universePic{
   width:40%;
 }
 
+.subtitle{
+  width : 100%;
+  text-align: center;
+}
 #repertory{
   width:80%;
   display: flex;
@@ -324,8 +331,17 @@ opacity: 1;
 }
 
 #price p{
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-size: 18px;
+  margin-left: 23%;
+  margin-right: 23%;
+  line-height: 160%;
+}
+#price img{
+  width: 622px;
+  height: 450px;
+  align-self: center;
 }
 
 #cost{
@@ -336,7 +352,9 @@ opacity: 1;
   background-color: white;
 }
 #equipment ul{
-  padding-left: 10%;
+  margin-left: 20%;
+  width: 60%;
+  border: 1px solid black;
   margin-bottom: 50px;
 }
 
@@ -362,18 +380,6 @@ h4{
   flex-direction: column;
 }
 
-#coordonnees{
-  background-color: #2b2b2b;
-  color:  white;
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-  width: 40%;
-  margin-left: 25%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 #adress{
   font-family: 'Open Sans', sans-serif;
   display: flex;
@@ -393,19 +399,26 @@ h4{
   padding-right: 10px;
 }
 
-#myAdress{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size:15px;
-  margin-left: -50px;
-}
-
 #message{
   font-family: 'Open Sans', sans-serif;
   font-size:18px;
   line-height: 160%;
 }
+#chris{
+  display: flex;
+  margin-top: 50px;
+    margin-bottom: 40px;
+}
+#chris p{
+  width:50%;
+  padding-left: 20px;
+  align-self: center;
+  line-height: 160%;
+}
 
+#chris img{
+  width:50%;
+}
 @media
 screen and (max-width: 1024px),
 screen and (max-device-width: 1024px){
@@ -560,13 +573,14 @@ h4{
   justify-content: flex-start;
 }
 
-#coordonnees{
-  margin-left:5%;
-  width:90%;
-  padding-left: 0;
-  margin-top: 60px;
-  text-align: center;
+#chris{
+  flex-direction: column;
 }
+#chris img{
+  width: 60%;
+  margin-left: 20%;
+}
+
 }
 @media
 screen and (max-width: 378px),
@@ -622,9 +636,6 @@ nav a {
   padding:0;
   width: 100%;
   text-align: center;
-}
-#coordonnees i {
-  padding-right: 20px;
 }
 #myAdress p{
   font-size: 33px;
